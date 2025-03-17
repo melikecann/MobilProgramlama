@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapQuizSelectionActivity"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/tv_map_quiz_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harita Quiz Seçenekleri"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/btnTurkeyMapQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Türkiye Haritası Quizi"
+        app:layout_constraintTop_toBottomOf="@id/tv_map_quiz_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/btnWorldMapQuiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Dünya Haritası Quizi"
+        app:layout_constraintTop_toBottomOf="@id/btnTurkeyMapQuiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
