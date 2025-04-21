@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+
+    <application
+        android:allowBackup="true"
+        android:label="Sensor Demo"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ThermometerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProximityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PressureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MagnetometerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HumidityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GyroscopeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccelerometerActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
