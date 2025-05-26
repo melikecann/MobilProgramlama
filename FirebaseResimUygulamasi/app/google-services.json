@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992842038570",
+    "project_id": "fir-resim-uygulamasi",
+    "storage_bucket": "fir-resim-uygulamasi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992842038570:android:a1af7390aa8481150d3253",
+        "android_client_info": {
+          "package_name": "com.example.firebaseresimuygulamasi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ7l4lYAnid3Au9IpWfjBEyn5z7FyP2h8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
