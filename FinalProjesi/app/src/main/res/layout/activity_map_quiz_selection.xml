@@ -1,43 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MapQuizSelectionActivity"
-    android:background="@color/light_blue">
+    android:background="#EAE6F7">
 
-    <TextView
-        android:id="@+id/tv_map_quiz_title"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Harita Quiz Seçenekleri"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnTurkeyMapQuiz"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Türkiye Haritası Quizi"
-        app:layout_constraintTop_toBottomOf="@id/tv_map_quiz_title"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
 
-    <Button
-        android:id="@+id/btnWorldMapQuiz"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Dünya Haritası Quizi"
-        app:layout_constraintTop_toBottomOf="@id/btnTurkeyMapQuiz"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"/>
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soru burada gözükecek"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 1"
+            android:backgroundTint="#6C50A3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 2"
+            android:backgroundTint="#6C50A3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 3"
+            android:backgroundTint="#6C50A3"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Option 4"
+            android:backgroundTint="#6C50A3"
+            android:textColor="#FFFFFF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+</ScrollView>
